@@ -1,0 +1,148 @@
+:root {
+  --color-button: darkred;
+  --text-Color-button: white;
+  --font: "PIZZARIA";
+}
+
+@font-face {
+  font-family: "PIZZARIA";
+  src: url(../assets/PIZZARIA.ttf);
+}
+
+body {
+  /*Display*/
+  width: 100%;
+  background-image: url(../images/background.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+ul {
+  /*Display*/
+  width: 30%;
+  display: grid;
+  position: absolute;
+  margin-top: 5em;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+}
+
+li {
+  /*Display*/
+  margin-right: -2em;
+}
+
+ul button {
+  /*Display*/
+  width: 80%;
+  margin-top: 0.5em;
+  margin-left: -1em;
+  padding: 0.5em 1em;
+  border: none;
+  box-shadow: 0.125rem 0.150rem 0rem rgba(0, 0, 0, 0.75);
+
+  /*Text*/
+  font-family: var(--font);
+  font-size: medium;
+
+  /*Color*/
+  color: var(--text-Color-button);
+  background-color: var(--color-button);
+}
+
+section > button:first-of-type {
+  /*Display*/
+  width: 29.2%;
+  position: absolute;
+  margin-top: 16em;
+  margin-left: 1.5em;
+  padding: 0.5em 1em;
+  border: none;
+  box-shadow: 0.125rem 0.150rem 0rem rgba(0, 0, 0, 0.75);
+
+  /*Text*/
+  font-family: var(--font);
+  font-size: medium;
+
+  /*Color*/
+  color: var(--text-Color-button);
+  background-color: green;
+}
+
+section > button:last-of-type {
+  /*Display*/
+  width: 9%;
+  position: absolute;
+  margin-top: 15em;
+  margin-left: 63.5em;
+  padding: 0.5em 1em;
+  border: none;
+  box-shadow: 0.125rem 0.150rem 0rem rgba(0, 0, 0, 0.75);
+
+  /*Text*/
+  font-family: var(--font);
+  font-size: medium;
+  
+  /*Color*/
+  color: var(--text-Color-button);
+  background-color: var(--color-button);
+}
+
+img {
+  /*Display*/
+  width: 24%;
+  display: none;
+  z-index: 1;
+  position: absolute;
+  margin-top: 3.5em;
+  margin-left: 32rem;
+}
+
+#progress-bar-container {
+  /*Display*/
+  width: 15%;
+  height: 20px;
+  margin-top: 11em;
+  margin-left: 33.5em;
+  border-radius: 10px;
+  overflow: hidden;
+  visibility: hidden;
+
+  /*Color*/
+  background-color: #f0f0f0;
+}
+
+#progress-bar {
+  /*Display*/
+  width: 0;
+  height: 100%;
+  transition: width 0.5s ease-in-out;
+
+  /*Color*/
+  background-color: #4caf50;
+}
+
+#progress-bar-text {
+  /*Display*/
+  margin-top: -18px; 
+ 
+  /*Text*/
+  text-align: center;
+  font-family: "PIZZARIA";
+  font-size: 14px;
+
+  /*Color*/
+  color: black;
+}
+
+
+/*
+bronnen:
+font:https://www.dafont.com/pizzaria.font
+pizza plus topping https://www.vecteezy.com/vector-art/1268536-delicious-pizza-isolated
+pizza oven https://www.vecteezy.com/vector-art/108834-free-pizza-oven-vector
+logo https://www.vecteezy.com/vector-art/20003555-pizza-chef-man-cartoon-character
+houten plaat https://www.vecteezy.com/vector-art/965512-wooden-sign-set-including-hanging-signs
+decoratie https://www.vecteezy.com/vector-art/2906650-top-view-of-a-whole-pizza-with-pepperoni-topping-on-the-table-background
+*/

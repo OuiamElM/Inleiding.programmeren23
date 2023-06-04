@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="jouw naam">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Pizza huis</title>
+
+  <link href="style/style.css" rel="stylesheet">
+  <link rel="icon" type="image/png+xml" href="images/favicon.png">
+</head>
+
+<body>
+
+  <header>
+  </header>
+
+  <main>
+    <section>
+      <ul>
+        <li><button class="showButton" data-image="olive">Olive</button></li>
+        <li><button class="showButton" data-image="pepperoni">Pepperoni</button></li>
+        <li><button class="showButton" data-image="tomato">Tomato</button></li>
+        <li><button class="showButton" data-image="onion">Onion</button></li>
+        <li><button class="showButton" data-image="coriander">Coriander</button></li>
+        <li><button class="showButton" data-image="mushroom">Mushroom</button></li>
+      </ul>
+      <button id="randomButton">Topping Generator</button>
+      <button id="cook-button">Cook</button>
+    </section>
+
+    <section class="randomImages">
+      <img id="oliveImage" src="./images/olive.png" alt="Olive" />
+      <img id="pepperoniImage" src="./images/Pepperoni.png" alt="Pepperoni" />
+      <img id="tomatoImage" src="./images/tomato.png" alt="Tomato" />
+      <img id="onionImage" src="./images/onion.png" alt="Onion" />
+      <img id="corianderImage" src="./images/coriander.png" alt="Coriander" />
+      <img id="mushroomImage" src="./images/Mushroom.png" alt="Mushroom" />
+    </section>
+
+    <div id="progress-bar-container">
+		<div id="progress-bar"></div>
+		<div id="progress-bar-text">Bijna klaar!</div>
+	</div>
+  </main>
+
+  <footer>
+  </footer>
+
+  <script src="script/java.js"></script>
+
+</body>
+
+</html>
+
